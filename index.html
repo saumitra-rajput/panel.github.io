@@ -3,60 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panel Gallery</title>
+    <title>Electrical Panel Gallery</title>
 
     <style>
         body {
             margin: 0;
-            padding: 20px;
             font-family: Arial, sans-serif;
-            background: #f5f7fa;
+            background: #f4f6f9;
+            color: #333;
         }
 
-        h1 {
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
         }
 
-        /* Gallery layout */
+        h2 {
+            margin-top: 40px;
+        }
+
+        /* Profile section */
+        .profile {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        .profile p {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+
+        .profile strong {
+            color: #000;
+        }
+
+        /* Panel details */
+        .details {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        .details ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .details li {
+            margin-bottom: 8px;
+        }
+
+        /* Gallery */
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
-            max-width: 1200px;
-            margin: auto;
         }
 
-        /* Image card */
         .gallery img {
             width: 100%;
-            height: 220px;              /* controls image size */
-            object-fit: cover;          /* crops nicely */
+            height: 220px;
+            object-fit: cover;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
         }
 
-        /* Hover effect */
         .gallery img:hover {
             transform: scale(1.05);
             box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #666;
         }
     </style>
 </head>
 <body>
 
-    <h1>Panel Images</h1>
+<div class="container">
 
-    <div class="gallery">
-        <img src="images/image1.jpeg" alt="Panel 1">
-        <img src="images/image2.jpeg" alt="Panel 2">
-        <img src="images/image3.jpeg" alt="Panel 3">
-        <img src="images/image4.jpeg" alt="Panel 4">
-        <img src="images/image5.jpeg" alt="Panel 5">
-        <img src="images/image6.jpeg" alt="Panel 6">
+    <h1>Electrical Panel Project</h1>
+
+    <!-- Profile Section -->
+    <div class="profile">
+        <h2>Creator Details</h2>
+        <p><strong>Name:</strong> Samarth Rajpoot</p>
+        <p><strong>Title:</strong> Electrical Engineer (Graduated 2024)</p>
+        <p><strong>University:</strong> AKTU, Lucknow</p>
+        <p><strong>Contact Number:</strong> 7379031421</p>
+        <p><strong>Email:</strong> samarthrajput2k16@gmail.com</p>
     </div>
+
+    <!-- Panel Details -->
+    <div class="details">
+        <h2>Panel Description</h2>
+        <p><strong>Panel Type:</strong> Star Delta Starter</p>
+        <p><strong>Supply:</strong> 3 Phase, 50 Hz</p>
+
+        <p><strong>Protection Features:</strong></p>
+        <ul>
+            <li>Overload Protection</li>
+            <li>Over Voltage Protection</li>
+            <li>Under Voltage Protection</li>
+            <li>Phase Loss Protection</li>
+        </ul>
+
+        <p><strong>Accessories Used:</strong></p>
+        <ul>
+            <li>MCCB</li>
+            <li>Contactors</li>
+            <li>Push Buttons</li>
+            <li>Indicator Lamps</li>
+            <li>Timer Relay</li>
+            <li>Protection Relay</li>
+            <li>SPPR</li>
+            <li>Energy Meter – ELMeasure LG6435</li>
+            <li>Morsun 12V DC SMPS</li>
+            <li>Terminal Blocks</li>
+            <li>Cable Manager</li>
+            <li>DIN Rail</li>
+            <li>CT Coils</li>
+            <li>Copper Control Wiring</li>
+            <li>Copper Load Wiring</li>
+        </ul>
+    </div>
+
+    <!-- Image Gallery -->
+    <h2>Panel Images</h2>
+    <div class="gallery">
+        <img src="images/image1.jpeg" alt="Star Delta Panel Image 1">
+        <img src="images/image2.jpeg" alt="Star Delta Panel Image 2">
+        <img src="images/image3.jpeg" alt="Star Delta Panel Image 3">
+        <img src="images/image4.jpeg" alt="Star Delta Panel Image 4">
+        <img src="images/image5.jpeg" alt="Star Delta Panel Image 5">
+        <img src="images/image6.jpeg" alt="Star Delta Panel Image 6">
+    </div>
+
+</div>
+
+<footer>
+    © 2024 Samarth Rajpoot | Electrical Panel Project
+</footer>
 
 </body>
 </html>
